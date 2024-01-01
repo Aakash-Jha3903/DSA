@@ -1,8 +1,32 @@
 #include <stdio.h>
-//inserion sort
+// inserion sort
+
+void display_array(int *arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+void insertion_sort(int *arr, int n)
+{
+    int i, j, key;
+    for (int i = 1; i < n; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key) // copy/shifting bigger elements to the right
+        {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key; // Place the key at its correct position in the sorted sequence
+    }
+}
 int main()
 {
-    int i, j, temp, n;
+    int i, j, key, n;
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
@@ -14,37 +38,14 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
+
     printf("Original array:\n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+    display_array(arr, n);
 
-    // Insertion Sort Algo
-    for (i = 1; i < n; i++)
-    {
-        temp = arr[i];
-        j = i - 1;
-
-        // Move elements of arr[0..i-1] that are greater than temp
-        // to one position ahead of their current position
-        while (j >= 0 && arr[j] > temp)
-        {
-            arr[j + 1] = arr[j];
-            j = j - 1;
-        }
-
-        // Place the temp at its correct position in the sorted sequence
-        arr[j + 1] = temp;
-    }
+    insertion_sort(arr, n);
 
     printf("Sorted array:\n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+    display_array(arr, n);
 
     return 0;
 }

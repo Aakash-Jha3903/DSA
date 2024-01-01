@@ -13,7 +13,7 @@ int main()
 
     do
     {
-        printf("\n1:Enqueue \n2:Dequeue \n3:Display \n");
+        printf("\n1:Enqueue \n2:Dequeue \n3:Display \n4:Exit \n");
         printf("Enter your choise : ");
         scanf("%d", &ch);
         switch (ch)

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Aakash Jha/Documents/college/DSA",
-      "program": "c:/Users/Aakash Jha/Documents/college/DSA/build/Debug/outDebug",
+      "cwd": "c:/Users/Aakash Jha/OneDrive/Desktop/college/DSA",
+      "program": "c:/Users/Aakash Jha/OneDrive/Desktop/college/DSA/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
