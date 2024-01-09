@@ -19,13 +19,17 @@ int main()
             scanf("%d", &g[i][j]);
         }
     }
+    // int cost[4][4] = {{0, 3, 999, 4}, {8, 0, 2, 999}, {5, 999, 0, 1}, {2, 999, 999, 0}}; 
+	// int n = 4;
+    
     printf("This is your initial matrix : \n");
     ;
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
         {
-            printf("%d ", g[i][j]);
+            printf("%7d ", g[i][j]);
+            // printf("%d ", g[i][j]);
         }
         printf("\n");
     }
@@ -49,7 +53,8 @@ int main()
     {
         for (j = 0; j < n; j++)
         {
-            printf("%d ", g[i][j]);
+            printf("%7d ", g[i][j]);
+            // printf("%d ", g[i][j]);
         }
         printf("\n");
     }

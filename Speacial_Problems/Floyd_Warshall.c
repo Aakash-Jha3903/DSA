@@ -6,13 +6,19 @@
 int main()
 {
     // Initial code matrix Q
-    int n = 4; // Number of vertices
-    int graph[4][4] = {
-        {INF, 2, 3, INF},
-        {INF, INF, 1, INF},
-        {INF, INF, INF, 5},
-        {3, 4, INF, INF}};
-
+    // int n = 4; // Number of vertices
+    // int graph[4][4] = {
+    //     {INF, 2, 3, INF},
+    //     {INF, INF, 1, INF},
+    //     {INF, INF, INF, 5},
+    //     {3, 4, INF, INF}};
+    int graph[4][4] = { { 0, 5, INF, 10 },
+                        { INF, 0, 3, INF },
+                        { INF, INF, 0, 1 },
+                        { INF, INF, INF, 0 } };
+    
+    int n=4;
+    
     printf("The initial cost matrix is :\n");
     for (int i = 0; i < n; i++)
     {
@@ -20,12 +26,14 @@ int main()
         {
             if (graph[i][j] == INF)
             {
-                printf("INF ");
+                printf("%7s", "INF");
+                // printf("INF ");
                 // printf("∞");
             }
             else
             {
-                printf("%d ", graph[i][j]);
+                 printf("%7d", graph[i][j]);
+                // printf("%d ", graph[i][j]);
             }
         }
         printf("\n");
@@ -53,12 +61,14 @@ int main()
         {
             if (graph[i][j] == INF)
             {
-                printf("INF ");
+                printf("%7s", "INF");
+                // printf("INF ");
                 // printf("∞");
             }
             else
             {
-                printf("%d ", graph[i][j]);
+                 printf("%7d", graph[i][j]);
+                // printf("%d ", graph[i][j]);
             }
         }
         printf("\n");
