@@ -57,6 +57,14 @@ int main()
         printf("Enter the value for new node : ");
         scanf("%d", &p->data);
 
+        if(pos== 1)
+        { 
+            p->next=head;
+            head=p;
+        }
+        else
+        {
+
         q = head;    
         for (int i = 1; i <= (pos - 2); i++) // Main logic *********
         {
@@ -64,6 +72,7 @@ int main()
         }
         p->next = q->next;
         q->next = p;
+}
 
         printf("\nAfter insertion , Elements of linked list are :\n ");
         q = head;
