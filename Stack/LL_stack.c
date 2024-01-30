@@ -30,10 +30,8 @@ int main()
             }
             else
             {
-                // p->next = q;
                 p->next = top;
                 top = p;
-                // top->next=NULL;
             }
             printf("%d is pushed .", top->data);
             break;
@@ -69,7 +67,7 @@ int main()
             printf("\nThank You\n");
             printf("Created by Aakash Jha ");
             printf("\n\n");
-            exit(0); // zero****************
+            exit(0); // zero***
             // break;
         default:
             printf("Invalid input ! ");
