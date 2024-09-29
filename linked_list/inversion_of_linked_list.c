@@ -58,7 +58,7 @@ int main()
         }
         
     }
-    head=A;
+    head=A;     //yo*************
 
     printf("\nElements of the INVERTED likned list are : \n");
     printf("\n");

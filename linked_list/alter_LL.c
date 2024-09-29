@@ -48,7 +48,7 @@ int main()
     printf("Alternate Linked List:\n");
     newhead = NULL;
     p = head;
-    i = 1;             // 1 or 0 !!!!!!!!!
+    i = 1;             // i=1 for even-pos and i=0 for odd-pos
     while (p != NULL)
     {
         if (i % 2 == 0) // If the index is even
@@ -99,3 +99,63 @@ int main()
 
     return 0;
 }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// typedef struct node
+// {
+//     int data;
+//     struct node *next;
+// } node;
+// int main()
+// {
+//     int i, c, n;
+//     node *head = NULL, *newhead = NULL, *p, *z;
+//     printf("Enter the number of nodes : ");
+//     scanf("%d", &n);
+//     for (i = 0; i < n; i++)
+//     {
+//         p = (node *)malloc(sizeof(node));
+//         if (head == NULL)
+//         {
+//             head = p;
+//             head->next = NULL;
+//         }
+//         else
+//         {
+//             z->next = p;
+//             p->next = NULL;
+//         }
+//     }
+//     z = p;
+//     printf("Your Original Linked List is : \n");
+//     p = head;
+//     while (p != NULL)
+//     {
+//         printf("%d\t", p->data);
+//         p = p->next;
+//     }
+//     printf("Alternate(even) Linked list :\n");
+//     newhead = NULL;
+//     z = head;
+//     p = head;
+//     c = 1;
+//     // while (c<=n)
+//     while (p != NULL && p->next != NULL)
+//     {
+//         if (newhead == NULL)
+//         {
+//             newhead = head->next;
+//             newhead->next = NULL;
+//             p = newhead;
+//             z = newhead;
+//             c = 2;
+//         }
+//         else
+//         {
+
+//         }
+//     }
+
+//     return 0;
+// }
